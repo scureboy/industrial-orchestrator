@@ -1,0 +1,14 @@
+
+# .gitignore
+node_modules/
+dist/
+.env
+.env.production
+.DS_Store
+thumbs.db
+server/uploads/*
+!server/uploads/.gitkeep
+server/database.sqlite
+.agent/
+.vscode/
+*.log
