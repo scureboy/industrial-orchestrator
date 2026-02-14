@@ -2,10 +2,8 @@
   "name": "industrial-orchestrator-root",
   "version": "1.0.0",
   "scripts": {
-    "start": "node industrial-orchestrator/server/index.js",
-    "install-all": "npm install --prefix industrial-orchestrator/client && npm install --prefix industrial-orchestrator/server",
-    "build-client": "npm run build --prefix industrial-orchestrator/client",
-    "postinstall": "npm run install-all && npm run build-client"
+    "start": "npm install --prefix industrial-orchestrator/server && npm install --prefix industrial-orchestrator/client && npm run build --prefix industrial-orchestrator/client && node industrial-orchestrator/server/index.js",
+    "build": "echo 'Build handled in start script'"
   },
   "engines": {
     "node": "18.x"
